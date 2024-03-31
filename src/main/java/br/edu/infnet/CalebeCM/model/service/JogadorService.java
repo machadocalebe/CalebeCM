@@ -11,22 +11,22 @@ import br.edu.infnet.CalebeCM.model.domain.Jogador;
 @Service
 public class JogadorService {
 	
-	private static Map<Integer, Jogador> treinadores = new HashMap<Integer, Jogador>();
+	private static Map<Integer, Jogador> jogadores = new HashMap<Integer, Jogador>();
 	
 	
 	public void incluir(Jogador jogador) {
-		treinadores.put(jogador.getRegistro(), jogador);
+		jogadores.put(jogador.getRegistro(), jogador);
 	}
 	
 	public void excluir(int registro) {
-		treinadores.remove(registro);
+		jogadores.remove(registro);
 	}
 	
 	public Collection<Jogador> obterLista(){
-		return treinadores.values();
+		return jogadores.values();
 	}
 	
 	public Jogador obter (int registro) {
-		return treinadores.get(registro);
+		return jogadores.get(registro);
 	}
 }

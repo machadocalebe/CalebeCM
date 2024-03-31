@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "be5cc264-eb38-4107-9f78-4f91ab590420",
+		"name": "TP3 - Calebe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33947813"
+	},
+	"item": [
+		{
+			"name": "Jogador",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/jogador/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"jogador",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/jogador/1/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"jogador",
+								"1",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"registro\": 3,\r\n    \"nome\": \"Ronaldinho Gaúcho\",\r\n    \"salario\": 0.0,\r\n    \"exCampeao\": false,\r\n    \"equipe\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/jogador/incluir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"jogador",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/jogador/3/excluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"jogador",
+								"3",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Equipe",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/equipe/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"equipe",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "obter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/equipe/Flamengo/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"equipe",
+								"Flamengo",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "incluir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Santos\",\r\n    \"email\": \"FeEmDeus@mail\",\r\n    \"treinadores\": null,\r\n    \"endereco\": {\r\n        \"cep\": null,\r\n        \"logradouro\": null,\r\n        \"complemento\": null,\r\n        \"bairro\": null,\r\n        \"localidade\": null,\r\n        \"uf\": null\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/equipe/incluir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"equipe",
+								"incluir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/equipe/Santos/excluir",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"equipe",
+								"Santos",
+								"excluir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Localidade",
+			"item": [
+				{
+					"name": "cep",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/localidade/25520115",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"localidade",
+								"25520115"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Equipe",
+			"item": []
+		}
+	]
+}
